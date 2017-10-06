@@ -34,7 +34,7 @@ class ViewController: UIViewController
     }
     private func pickRandomColor() -> UIColor
     {
-        //arc4random returns a number between 1 and (parameter - 1)
+        //arc4random returns a number between 0 and (parameter - 1)
         let color : UIColor
         let redAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
         
